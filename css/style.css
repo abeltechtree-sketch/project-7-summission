@@ -1,0 +1,390 @@
+html {
+  box-sizing: border-box;
+  font-size: 1.6rem; }
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 62.5%;
+  font-family: 'Courier New', Courier, monospace; }
+
+.container {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 0 1rem;
+  margin: 0 auto;
+  border: 1px solid lightgray; }
+
+img {
+  width: 100%; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7d60c0;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: .4px;
+  padding: 20px; }
+  .header .header-title {
+    font-size: 1rem;
+    font-weight: bold; }
+  .header .bell {
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid white;
+    padding-top: 10px; }
+  .header .student {
+    display: flex;
+    text-transform: capitalize;
+    color: white; }
+    .header .student .name {
+      padding-top: 10px;
+      padding-left: 10px; }
+    .header .student .head {
+      width: 40px;
+      border-radius: 20px; }
+
+.main-nav {
+  background-color: #534373;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px; }
+  .main-nav .nav-item img {
+    width: 28px;
+    height: 28px; }
+
+.dash {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .dash .board {
+    text-transform: capitalize;
+    font-size: 1.6;
+    width: 100px;
+    margin-right: 10px; }
+  .dash .text {
+    flex: 1;
+    height: 70px; }
+
+.alert {
+  width: inherit;
+  padding: 20px;
+  background-color: #7D60C0;
+  border-radius: 10px;
+  margin: 20px;
+  color: white;
+  text-transform: capitalize; }
+
+.top h2 {
+  text-transform: uppercase;
+  padding-bottom: 10px; }
+
+.times {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .times button {
+    border: none;
+    text-transform: capitalize;
+    padding: 10px;
+    cursor: pointer; }
+    .times button:hover {
+      color: white;
+      background-color: #61D58E;
+      border-radius: 10px; }
+
+.users {
+  margin-top: 20px; }
+  .users .middle h2 {
+    text-transform: uppercase; }
+  .users .bottom {
+    margin-top: 20px; }
+    .users .bottom h2 {
+      text-transform: uppercase; }
+
+.socials {
+  margin-top: 20px; }
+  .socials h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+
+.new {
+  margin-top: 20px;
+  width: inherit; }
+  .new h2 {
+    text-transform: uppercase; }
+  .new .box-a {
+    padding: 40px;
+    text-align: center; }
+    .new .box-a img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .new .box-a figcaption {
+      text-transform: capitalize; }
+    .new .box-a a,
+    .new .box-a p {
+      padding-bottom: 10px; }
+  .new .box-b {
+    padding: 40px;
+    text-align: center; }
+    .new .box-b img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .new .box-b figcaption {
+      text-transform: capitalize; }
+    .new .box-b a,
+    .new .box-b p {
+      padding-bottom: 10px; }
+  .new .box-c {
+    padding: 40px;
+    text-align: center; }
+    .new .box-c img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .new .box-c figcaption {
+      text-transform: capitalize; }
+    .new .box-c a,
+    .new .box-c p {
+      padding-bottom: 10px; }
+  .new .box-d {
+    padding: 40px;
+    text-align: center; }
+    .new .box-d img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .new .box-d figcaption {
+      text-transform: capitalize; }
+    .new .box-d a,
+    .new .box-d p {
+      padding-bottom: 10px; }
+
+.activity {
+  margin-top: 20px;
+  width: inherit; }
+  .activity h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  .activity .active-1 {
+    text-align: center;
+    padding: 40px; }
+    .activity .active-1 img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .activity .active-1 p,
+    .activity .active-1 h3 {
+      text-transform: capitalize;
+      padding-bottom: 5px; }
+  .activity .active-2 {
+    text-align: center;
+    padding: 40px; }
+    .activity .active-2 img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .activity .active-2 p,
+    .activity .active-2 h3 {
+      text-transform: capitalize;
+      padding-bottom: 5px; }
+  .activity .active-3 {
+    padding: 40px;
+    text-align: center; }
+    .activity .active-3 img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .activity .active-3 p,
+    .activity .active-3 h3 {
+      text-transform: capitalize;
+      padding-bottom: 5px; }
+  .activity .active-4 {
+    text-align: center;
+    padding: 40px; }
+    .activity .active-4 img {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px; }
+    .activity .active-4 p,
+    .activity .active-4 h3 {
+      text-transform: capitalize;
+      padding-bottom: 5px; }
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 70px 1fr; }
+
+  .header {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+
+  .main-nav {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+
+  .main {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+
+  .users {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-gap: 20pxpx; }
+
+  .middle {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .bottom {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+
+  .socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-gap: 20px; }
+
+  .facebook {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .instagram {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+
+  .twitter {
+    grid-column: 3/4;
+    grid-row: 1/2; }
+
+  .new {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-gap: 20px; }
+
+  .box-a {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .box-b {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+
+  .box-c {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+
+  .box-d {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+
+  .activity {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-gap: 20px; }
+
+  .active-1 {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .active-2 {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+
+  .active-3 {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+
+  .active-4 {
+    grid-column: 1/2;
+    grid-row: 4/5; } }
+@media (min-width: 901px) {
+  .container {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 70px 1fr; }
+
+  .header {
+    grid-column: 1/3;
+    grid-row: 1/2; }
+
+  .main-nav {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+
+  .main {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+
+  .users {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-gap: 20pxpx; }
+
+  .middle {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .bottom {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+
+  .socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-gap: 20px; }
+
+  .facebook {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .instagram {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+
+  .twitter {
+    grid-column: 3/4;
+    grid-row: 1/2; }
+
+  .below {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-gap: 20px; }
+
+  .new {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .activity {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+
+  .message {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+
+  .settings {
+    grid-column: 2/3;
+    grid-row: 2/3; } }
+
+/*# sourceMappingURL=style.css.map */
