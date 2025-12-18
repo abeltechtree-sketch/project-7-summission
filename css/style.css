@@ -58,6 +58,9 @@ img {
     width: 28px;
     height: 28px; }
 
+main {
+  padding: 15px; }
+
 .dash {
   display: flex;
   align-items: center;
@@ -217,6 +220,77 @@ img {
     .activity .active-4 h3 {
       text-transform: capitalize;
       padding-bottom: 5px; }
+
+.message {
+  width: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .message h3 {
+    text-transform: uppercase;
+    padding-bottom: 10px; }
+  .message .search {
+    text-align: center;
+    padding-bottom: 10px; }
+    .message .search input {
+      width: 100%;
+      height: 40px;
+      border-radius: 10px; }
+  .message .note {
+    text-align: center; }
+    .message .note textarea {
+      width: 100%;
+      height: 100px;
+      border-radius: 10px;
+      text-align: left; }
+  .message .button {
+    padding-top: 10px;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #7D60C0; }
+
+.settings {
+  margin-top: 20px; }
+  .settings h2 {
+    text-transform: uppercase;
+    padding-bottom: 30px; }
+  .settings .send {
+    text-align: center; }
+    .settings .send p {
+      text-transform: capitalize; }
+  .settings .set {
+    text-align: center; }
+    .settings .set p {
+      text-transform: capitalize; }
+
+.footer {
+  width: inherit;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .footer select {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px; }
+  .footer .buttons {
+    width: inherit;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .footer .buttons .save {
+      padding: 15px 70px;
+      background-color: #7D60C0;
+      border-radius: 10px;
+      color: white;
+      text-transform: uppercase; }
+    .footer .buttons .cancel {
+      padding: 15px 70px;
+      background-color: #989898;
+      border-radius: 10px;
+      color: white;
+      text-transform: uppercase; }
 
 @media (min-width: 600px) and (max-width: 900px) {
   .container {
