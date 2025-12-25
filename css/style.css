@@ -58,8 +58,8 @@ img {
     width: 28px;
     height: 28px; }
 
-main {
-  padding: 15px; }
+.main {
+  padding: 4px; }
 
 .dash {
   display: flex;
@@ -102,7 +102,8 @@ main {
       border-radius: 10px; }
 
 .users {
-  margin-top: 20px; }
+  margin-top: 20px;
+  border: 0 !important; }
   .users .middle h2 {
     text-transform: uppercase; }
   .users .bottom {
@@ -314,8 +315,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content;
-    grid-gap: 20pxpx; }
+    grid-template-rows: min-content min-content; }
 
   .middle {
     grid-column: 1/2;
@@ -323,9 +323,10 @@ main {
 
   .bottom {
     grid-column: 2/3;
-    grid-row: 1/2; }
+    grid-row: 1/2;
+    padding-bottom: 15px; }
 
-  .socials {
+  .social-inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
@@ -351,19 +352,91 @@ main {
 
   .box-a {
     grid-column: 1/2;
-    grid-row: 1/2; }
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .box-a figure {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .box-a figure .profile {
+        text-align: left;
+        display: flex;
+        align-items: center; }
+      .box-a figure figcaption {
+        font-size: 10px; }
+      .box-a figure a, .box-a figure p {
+        font-size: 10px; }
+      .box-a figure img {
+        width: 15px;
+        height: 15px; }
 
   .box-b {
     grid-column: 1/2;
-    grid-row: 2/3; }
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .box-b figure {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .box-b figure .profile {
+        text-align: left;
+        display: flex;
+        align-items: center; }
+      .box-b figure figcaption {
+        font-size: 10px; }
+      .box-b figure a, .box-b figure p {
+        font-size: 10px; }
+      .box-b figure img {
+        width: 15px;
+        height: 15px; }
 
   .box-c {
     grid-column: 1/2;
-    grid-row: 3/4; }
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .box-c figure {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .box-c figure .profile {
+        text-align: left;
+        display: flex;
+        align-items: center; }
+      .box-c figure figcaption {
+        font-size: 10px; }
+      .box-c figure a, .box-c figure p {
+        font-size: 10px; }
+      .box-c figure img {
+        width: 15px;
+        height: 15px; }
 
   .box-d {
     grid-column: 1/2;
-    grid-row: 4/5; }
+    grid-row: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .box-d figure {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      .box-d figure .profile {
+        text-align: left;
+        display: flex;
+        align-items: center; }
+      .box-d figure figcaption {
+        font-size: 10px; }
+      .box-d figure a, .box-d figure p {
+        font-size: 10px; }
+      .box-d figure img {
+        width: 15px;
+        height: 15px; }
 
   .activity {
     display: grid;
@@ -386,79 +459,5 @@ main {
   .active-4 {
     grid-column: 1/2;
     grid-row: 4/5; } }
-@media (min-width: 901px) {
-  .container {
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 70px 1fr; }
-
-  .header {
-    grid-column: 1/3;
-    grid-row: 1/2; }
-
-  .main-nav {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-
-  .main {
-    grid-column: 2/3;
-    grid-row: 2/3; }
-
-  .users {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content;
-    grid-gap: 20pxpx; }
-
-  .middle {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-
-  .bottom {
-    grid-column: 2/3;
-    grid-row: 1/2; }
-
-  .socials {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content min-content;
-    grid-gap: 20px; }
-
-  .facebook {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-
-  .instagram {
-    grid-column: 2/3;
-    grid-row: 1/2; }
-
-  .twitter {
-    grid-column: 3/4;
-    grid-row: 1/2; }
-
-  .below {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content;
-    grid-gap: 20px; }
-
-  .new {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-
-  .activity {
-    grid-column: 2/3;
-    grid-row: 1/2; }
-
-  .message {
-    grid-column: 1/2;
-    grid-row: 2/3; }
-
-  .settings {
-    grid-column: 2/3;
-    grid-row: 2/3; } }
 
 /*# sourceMappingURL=style.css.map */
